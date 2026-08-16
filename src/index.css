@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", "Cormorant Garamond", Georgia, serif;
+  --font-display: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  --color-luxury-canvas: #FDFCF9;
+  --color-luxury-surface: #F8F5F0;
+  --color-luxury-taupe: #E8E2D6;
+  --color-luxury-border: #E8E2D6;
+  --color-luxury-accent: #C27E6E;
+  --color-luxury-accent-hover: #AF6A5B;
+  --color-luxury-charcoal: #2D2D2D;
+  --color-luxury-dark: #1E1E1E;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #FDFCF9;
+    color: #2D2D2D;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif-heading {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FDFCF9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E8E2D6;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C27E6E;
+}
+
+/* Custom animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+

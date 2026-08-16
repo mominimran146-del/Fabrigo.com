@@ -1,0 +1,6 @@
+{
+  "name": "FABRIGO Boutique",
+  "description": "Premium boutique ecommerce website for FABRIGO - Everyday Elegance, Beautifully Crafted. Featuring curated kurtis, dresses, co-ord sets, and ethnic wear with WhatsApp ordering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
